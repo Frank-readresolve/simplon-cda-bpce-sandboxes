@@ -4,7 +4,7 @@ public class Application {
 
     public static void main(String[] args) {
 	IO.println(Person.counter()); // Prints number of Person instance (0)
-	IO.println(Person.majority); // static access (field)
+	IO.println(Person.MAJORITY); // static access (field)
 	IO.println(Person.majority()); // class call (method)
 	Person toto = new Person("Toto", 18); // each new = new object
 	IO.println(toto.getName()); // getName returns the name of the instance

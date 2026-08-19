@@ -34,7 +34,9 @@ public class Person /* extends Object */ {
 
     // static != constant
     // constant (java) = final
-    public static final int majority = 18;
+    // Naming convention for static constants:
+    // SNAKE_CASE
+    public static final int MAJORITY = 18;
 
     private static int counter = 0;
 
@@ -63,11 +65,11 @@ public class Person /* extends Object */ {
     public static int majority() { // static method
 	// this (object) is not accessible
 	// int maj = this.age;
-	return Person.majority;
+	return Person.MAJORITY;
     }
 
     public boolean hasMajority() { // instance method
-	return age >= Person.majority;
+	return age >= Person.MAJORITY;
     }
 
     public int getAge() { // instance method
